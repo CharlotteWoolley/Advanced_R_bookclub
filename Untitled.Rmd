@@ -1,0 +1,62 @@
+---
+title: 'Chapter 4: Subsetting'
+author: 'Charlotte Woolley'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# *4.2.1 Atomic vectors*
+
+### 1. Positive integers return elements at the specified positions:
+
+```{r}
+
+x <- c(2.1, 4.2, 3.3, 5.4)
+
+x[c(3, 1)]
+
+x[order(x)]
+
+order(x)
+
+x[c(1, 1)]
+
+x[c(2.1, 2.9)]
+
+
+```
+
+
+### 2. Negative integers exclude elements at the specified positions:
+
+```{r}
+x[-c(3, 1)]
+
+x[c(-1, 2)]
+```
+
+### 3. Logical vectors select elements where the corresponding logical value is TRUE:
+
+```{r}
+x[c(TRUE, TRUE, FALSE, FALSE)]
+
+x[x > 3]
+
+x[c(TRUE, FALSE)]
+
+x[c(TRUE, FALSE, TRUE, FALSE)]
+
+
+x[c(TRUE, FALSE, TRUE)]
+
+```
+
+```{r}
+
+
+```
+
